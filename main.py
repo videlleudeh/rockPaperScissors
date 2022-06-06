@@ -46,12 +46,13 @@ while True:
            
 
 
-        choice = input('Would you like to play again? Yes(y)/No(n): \n')
-            
-        if choice == "y":
-            pass
-        if choice == "n":
-            False
-            print (" ")
-            print ("Thanks for playing!")
-            break
+    choice = input('Would you like to play again? Yes(y)/No(n): \n')
+        
+    if choice == "y":
+        pass
+    if choice == "n":
+        False
+        print (" ")
+        print ("Thanks for playing!")
+        break
+
