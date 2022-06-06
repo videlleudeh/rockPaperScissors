@@ -1,4 +1,5 @@
 import random
+from re import S
 
 
 print("This is a simple game of Rock Paper Scissors. Videlle says, 'Enjoy!'")
@@ -33,22 +34,24 @@ while True:
         else:
             print("Paper covers rock! You lose.")
     elif user_input == "P":
-        if comp_input == "S":
-            print("Scissors cuts paper! You lose.")
-        else:
+        if comp_input == "R":
             print("Paper covers rock! You win!.")
+        else:
+            print("Scissors cuts paper! You lose.")
     elif user_input == "S":
         if comp_input == "R":
-            print("Rock smashes scissors! You lose.")
-        else:
             print("Scissors cuts paper! You win!")
+        else:
+            print("Rock smashes scissors! You lose.")
+           
+
+
+        choice = input('Would you like to play again? Yes(y)/No(n): \n')
+            
+        if choice == "y":
+            pass
+        if choice == "n":
+            False
+            print (" ")
+            print ("Thanks for playing!")
             break
-
-
-choice = input('Would you like to play again? Yes/No:')
-    
-if choice == "Yes":
-        pass
-if choice == "No":
-        False
-        print ("Thanks for playing!")
