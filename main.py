@@ -13,18 +13,19 @@ r_p_s = ["R", "P", "S"]
 while True:
     for x in r_p_s:
         
+        print ("R is Rock, P is Paper and S is Scissors \n")
         user_input = input("Select an option between 'R', 'S', 'P': \n")
         
         if user_input not in r_p_s:
             print ("Invalid option, please enter a valid input.")
 
         else: 
-            print("Please hold on for your opponent")
+            print("Please hold on for your opponent.")
             break
  
     comp_input = random.choice(r_p_s)
 
-    print(f"\nPlayer {user_input} : CPU {comp_input}.\n")
+    print(f"\nPlayer ({user_input}) : CPU ({comp_input}).\n")
 
     if user_input == comp_input:
         print(f"Both players selected {user_input}. It's a tie! Try again")
